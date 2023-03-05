@@ -506,10 +506,6 @@ a.archive-link {
   position: relative;
   top: -1px;
 }
-/* Comments */
-#disqus_thread {
-  color: #787878;
-}
 /* Tables */
 table {
   width: 100%;
