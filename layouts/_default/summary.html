@@ -4,7 +4,7 @@
         <div class="post-meta"><time datetime="{{ .Date.Format "January 02, 2006" }}">{{ .Date.Format "January 02, 2006" }}</time></div>
     </header>
     <section class="post-excerpt">
-        {{ if and (not .Description) (.Site.Params.useSummaryIfNoDescription)}}
+        {{ if not .Params.outdated }}
         <a class="excerptlink" href="{{ .Permalink }}"><p>{{ .Summary }}&hellip;</p></a>
         {{ else }}
         <a class="excerptlink" href="{{ .Permalink }}"><p>{{ .Description | markdownify }}&hellip;</p></a>
